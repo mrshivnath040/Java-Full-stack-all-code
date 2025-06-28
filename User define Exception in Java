@@ -1,0 +1,34 @@
+package org.studyeasy;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+        Main main = new Main();
+        try{
+            main.dosomthing();
+        }catch(zeroexception e){
+            e.printStackTrace();
+        }
+        System.out.printf("Hello World!");
+
+
+    }
+
+    public class zeroexception extends RuntimeException {
+
+    }
+
+    public void dosomthing() throws zeroexception {
+
+        String x = "one";
+        System.out.println("exception");
+        if (x.equals("zero")) ;
+        {
+             throw new zeroexception();
+
+        }
+
+    }
+}
+
