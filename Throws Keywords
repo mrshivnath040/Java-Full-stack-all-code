@@ -1,0 +1,23 @@
+package org.studyeasy;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+        Main main = new Main();
+        try{
+            main.Dosomthing();   //exception work
+        }catch(FileNotFoundException e){
+            e.printStackTrace();
+        }
+
+    }
+
+    public void Dosomthing() throws FileNotFoundException {
+        FileReader fileReader = new FileReader("D:\\Java\\C\\studyeasy.txt");
+        System.out.println("dosomthing");
+    }
+}
