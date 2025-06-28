@@ -1,0 +1,41 @@
+/*
+ * Copyright (c) 2025. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+ * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+ * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+ * Vestibulum commodo. Ut rhoncus gravida arcu.
+ */
+
+package org.studyeasy;
+
+import java.util.ArrayList;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.in
+class IntWrapper{
+    public int num;
+
+     public IntWrapper(int num) {
+         this.num = num;
+     }
+
+     public int getNum() {
+         return num;
+     }
+
+     public void setNum(int num) {
+         this.num = num;
+     }
+ }
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Double> list = new ArrayList<Double>();
+        list.add(Double.valueOf(28.34));
+        list.add(23.567);  //autoboxing
+        list.get(0).doubleValue();  //unboxing
+        System.out.println(list.get(0).doubleValue());
+
+
+
+    }
+}
