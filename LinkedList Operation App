@@ -1,0 +1,67 @@
+package org.studyeasy;
+
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Scanner;
+
+// Project name is (Linkedlist Operation App)
+  // method using like Add Element, Display, Sort list, Reverse list, Exiting...
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class LinkedListApp {
+    public static void main(String[] args) {
+        LinkedList<String> list = new LinkedList<>();
+        Scanner sc = new Scanner(System.in);
+        int operation;
+
+        do{
+            System.out.println("\nLinkedlist Operation: ");
+            System.out.println("1. Add Element");
+            System.out.println("2. Display Element");
+            System.out.println("3. Sort Element");
+            System.out.println("4. Reverse Element");
+            System.out.println("5. Exiting Element");
+            System.out.println("Enter your choice: ");
+            operation = sc.nextInt();
+            sc.nextLine();   // for consume line
+
+            switch(operation){
+                case 1:
+                    System.out.println("Enter the element to be added: ");
+                    String Element = sc.nextLine();
+                    list.add(Element);
+                    System.out.println("Added Element: "  + Element);
+                    break;
+            case 2:
+                if(list.isEmpty()){
+                    System.out.println("List is empty");
+                }else{
+                    System.out.println("Element in list " + list) ;
+                    Iterator<String> iterator = list.iterator();
+                    while(iterator.hasNext()){
+                        System.out.println(iterator.next());
+                    }
+                }
+                break;
+            case 3:
+                Collections.sort(list);
+                System.out.println("Sorted List: " + list);
+                break;
+            case 4:
+                Collections.reverse(list);
+
+                System.out.println("Reversed List: " + list);
+                break;
+            case 5:
+                System.out.println("Exiting Element");
+                break;
+
+            }
+
+        }while(operation != 5);
+
+        sc.close();
+
+    }
+}
