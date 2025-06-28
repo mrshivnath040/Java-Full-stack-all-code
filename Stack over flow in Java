@@ -1,0 +1,33 @@
+package org.studyeasy;
+
+import java.util.Stack;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+
+        Stack<Integer> numbers = new Stack<Integer>();  //Stack in java
+        numbers.push(5);  //FIFO
+        numbers.push(6);
+        numbers.push(7);
+        numbers.push(8);
+        numbers.push(9);
+        numbers.push(10);   // first in last out
+        System.out.println(numbers);
+        System.out.println(numbers.search(9));
+        System.out.println(numbers.push(20));
+        System.out.println(numbers);
+        System.out.println(numbers.pop());
+        System.out.println(numbers);
+        System.out.println(numbers.pop());
+        System.out.println(numbers);
+        System.out.println(numbers.pop());
+        System.out.println(numbers);
+        System.out.println(numbers.peek());
+        System.out.println(numbers);
+
+        
+
+    }
+}
