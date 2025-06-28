@@ -1,0 +1,28 @@
+package org.studyeasy;
+
+import java.util.ArrayList;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {       // java collection frameworks
+        ArrayList<String> listnames = new ArrayList(); // array list
+        listnames.add("shivnath");
+        listnames.add("ganeshj");
+        listnames.add("dinesh");
+        listnames.add("varun");
+        System.out.println(listnames);
+
+        for (String name : listnames) {  // fro each loop
+            System.out.println(name);
+        }
+        listnames.remove("shivnath");
+        System.out.println(listnames);
+        listnames.set(1,"rahul");
+        System.out.println(listnames);
+        listnames.indexOf("varun");
+        System.out.println(listnames);
+        listnames.add(0,"shivnath");
+        System.out.println(listnames);
+    }
+}
