@@ -7,13 +7,17 @@ import java.util.Locale;
 public class Main {
     public static void main(String[] args) {
 
-        String a = "Dawke ";
-        String b = "Shivnath";
-        String c = a+b;
-       // System.out.println(c.replace(target dawke , replacement shivanth));
-        //System.out.println(c);
-
-        System.out.println(c);
+        String a = "shivnath";
+        String z = "gannu";
+        String x = "dawke";
+        String y = a.toUpperCase();
+        String x1 = x.concat(z);
+        System.out.println(x1);
+        System.out.println(y);
+        System.out.println(a);
+        int b = a.length();
+        System.out.println(b);
 
     }
+
 }
