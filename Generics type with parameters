@@ -1,0 +1,46 @@
+package org.studyeasy;
+
+ //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+     /*Notations for Generics
+      T- Type
+      E- Element
+      K- key
+      V- Value
+      N- Number
+      */
+class Data<K,V>{    // Generic Wrapper Class
+    K key;
+    V value;
+
+
+     public Data(K key, V value) {   // constructor
+         this.key = key;
+         this.value = value;
+     }
+
+     public K getKey() {   //Getters
+         return key;
+     }
+
+     public V getValue() {
+         return value;
+     }
+
+     @Override
+     public String toString() {  // tostring method
+         return "Data{" +
+                 "key=" + key +
+                 ", value=" + value +
+                 '}';
+     }
+ }
+
+public class Main {
+    public static void main(String[] args) {
+        Data<Integer, String> d = new Data<Integer, String>(1, "Hello");
+        System.out.println("\nKey: " + d.getKey()+"\nValue: " + d.getValue());
+
+
+    }
+}
