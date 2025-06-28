@@ -1,0 +1,29 @@
+package org.studyeasy;
+
+import java.util.*;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+
+        List<Object> list = new ArrayList<>();
+        list.add("Abc");
+        list.add("Eca");
+        list.add("Rac");
+        list.add("B");
+        list.add("C");
+        new Main().printList(list);
+
+    }
+    void printList(List<Object> list) {
+        ListIterator<Object> iterator = list.listIterator();  // itreater the list
+        while (iterator.hasNext()) {   // for looping
+            System.out.println(iterator.next());
+        }
+        list.sort(null); // to make list in order
+        System.out.println(list);
+        Collections.reverse(list);  // to make list in reverse
+        System.out.println(list);
+    }
+}
