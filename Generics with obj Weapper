@@ -1,0 +1,53 @@
+package org.studyeasy;
+
+ //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+class Data {
+    private String object;           // wrapper class
+
+    public Data(String object) {
+        this.object = object;
+    }
+
+    @Override
+    public String toString() {
+        return object.toString();
+    }
+}
+class Person {
+    private String personName;
+
+    public Person(String personName) {
+        this.personName = personName;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "personName='" + personName + '\'' +
+                '}';
+    }
+
+    public String getPersonName() {
+        return personName;
+    }
+}
+public class Main {
+    public static <person> void main(String[] args) {
+        List<Data> persons = new LinkedList<>();
+        persons.add(new Data("shiva"));
+        persons.add(new Data("shivnath"));
+        persons.add(new Data("ganesh"));
+        persons.add(new Data("dinesh"));
+        System.out.println(persons);
+        Data x = new Data("dinesh");
+        System.out.println(x);
+
+
+    }
+}
